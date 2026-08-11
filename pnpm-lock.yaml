@@ -164,6 +164,9 @@ importers:
       mineflayer-item-map-downloader:
         specifier: github:zardoy/mineflayer-item-map-downloader
         version: https://codeload.github.com/zardoy/mineflayer-item-map-downloader/tar.gz/a8d210ecdcf78dd082fa149a96e1612cc9747824(patch_hash=a731ebbace2d8790c973ab3a5ba33494a6e9658533a9710dd8ba36f86db061ad)(encoding@0.1.13)
+      mineflayer-mouse:
+        specifier: github:hellios-12/mineflayer-mouse
+        version: https://codeload.github.com/hellios-12/mineflayer-mouse/tar.gz/89b4c473e21f4ad3ee13c9b3fb28a1e4ccfb701f
       mojangson:
         specifier: ^2.0.4
         version: 2.0.4
@@ -360,9 +363,6 @@ importers:
       mineflayer:
         specifier: github:zardoy/mineflayer#gen-the-master
         version: https://codeload.github.com/zardoy/mineflayer/tar.gz/87dbfa28e39f43aa60bd2f2d7d1c2d22a3e73ef7(encoding@0.1.13)
-      mineflayer-mouse:
-        specifier: 0.1.28
-        version: 0.1.28
       npm-run-all:
         specifier: ^4.1.5
         version: 4.1.5
@@ -6209,6 +6209,10 @@ packages:
     resolution: {integrity: sha512-31r73CqU7eiv8cQSVA+NMR0WfA8Qs+p6of+Bd7ApWzR4a56W6fgfY3MExNmxxbb1/w9IbxTcMhDbcoKmE/5+nw==}
     engines: {node: ^12.20.0 || ^14.13.1 || >=16.0.0}
 
+  mineflayer-mouse@https://codeload.github.com/hellios-12/mineflayer-mouse/tar.gz/89b4c473e21f4ad3ee13c9b3fb28a1e4ccfb701f:
+    resolution: {tarball: https://codeload.github.com/hellios-12/mineflayer-mouse/tar.gz/89b4c473e21f4ad3ee13c9b3fb28a1e4ccfb701f}
+    version: 0.0.0-dev
+
   mineflayer@https://codeload.github.com/zardoy/mineflayer/tar.gz/87dbfa28e39f43aa60bd2f2d7d1c2d22a3e73ef7:
     resolution: {tarball: https://codeload.github.com/zardoy/mineflayer/tar.gz/87dbfa28e39f43aa60bd2f2d7d1c2d22a3e73ef7}
     version: 8.0.0
@@ -9477,7 +9481,7 @@ snapshots:
       '@babel/parser': 7.26.9
       '@babel/template': 7.26.9
       '@babel/types': 7.26.9
-      debug: 4.4.1
+      debug: 4.4.3
       globals: 11.12.0
     transitivePeerDependencies:
       - supports-color
@@ -12016,7 +12020,7 @@ snapshots:
     dependencies:
       '@typescript-eslint/typescript-estree': 6.1.0(typescript@5.5.4)
       '@typescript-eslint/utils': 6.1.0(eslint@8.57.1)(typescript@5.5.4)
-      debug: 4.4.1
+      debug: 4.4.3
       eslint: 8.57.1
       ts-api-utils: 1.4.3(typescript@5.5.4)
     optionalDependencies:
@@ -12048,7 +12052,7 @@ snapshots:
     dependencies:
       '@typescript-eslint/types': 6.21.0
       '@typescript-eslint/visitor-keys': 6.21.0
-      debug: 4.4.1
+      debug: 4.4.3
       globby: 11.1.0
       is-glob: 4.0.3
       minimatch: 9.0.3
@@ -12063,7 +12067,7 @@ snapshots:
     dependencies:
       '@typescript-eslint/types': 8.26.0
       '@typescript-eslint/visitor-keys': 8.26.0
-      debug: 4.4.1
+      debug: 4.4.3
       fast-glob: 3.3.3
       is-glob: 4.0.3
       minimatch: 9.0.5
@@ -15879,6 +15883,15 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
+  mineflayer-mouse@https://codeload.github.com/hellios-12/mineflayer-mouse/tar.gz/89b4c473e21f4ad3ee13c9b3fb28a1e4ccfb701f:
+    dependencies:
+      change-case: 5.4.4
+      debug: 4.4.3
+      prismarine-item: 1.18.0
+      prismarine-world: https://codeload.github.com/zardoy/prismarine-world/tar.gz/ab2146c9933eef3247c3f64446de4ccc2c484c7c
+    transitivePeerDependencies:
+      - supports-color
+
   mineflayer@https://codeload.github.com/zardoy/mineflayer/tar.gz/87dbfa28e39f43aa60bd2f2d7d1c2d22a3e73ef7(encoding@0.1.13):
     dependencies:
       '@nxg-org/mineflayer-physics-util': https://codeload.github.com/zardoy/mineflayer-physics-utils/tar.gz/ab0402efd01020e61a7b800cf89a1485b4df82d7
@@ -16775,7 +16788,7 @@ snapshots:
   puppeteer-core@2.1.1:
     dependencies:
       '@types/mime-types': 2.1.4
-      debug: 4.4.1
+      debug: 4.4.3
       extract-zip: 1.7.0
       https-proxy-agent: 4.0.0
       mime: 2.6.0
